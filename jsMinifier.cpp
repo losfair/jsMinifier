@@ -35,9 +35,9 @@ void trimJSData(unsigned char *origData) {
 		trimNow = false;
 
 		if(*origData == '\\') {
-				if(*(origData+1) == '\0') break;
-				origData += 2;
-				continue;
+			if(*(origData+1) == '\0') break;
+			origData += 2;
+			continue;
 		}
 
 		if(currentSeparator) {
